@@ -1,22 +1,22 @@
-name: The name of your action here
-description: Provide a description here
-author: Your name or organization here
-
-# Add your action's branding here. This will appear on the GitHub Marketplace.
+name: 'Delay Timer'
+description: 'Pauses workflow execution for a specified number of milliseconds. Useful for waiting between steps or simulating delays in CI/CD pipelines.'
+author: 'Your Name or Org'
 branding:
-  icon: heart
-  color: red
+  icon: 'clock'    # Consider 'clock', 'hourglass', or another time-related icon
+  color: 'yellow'  # Choose a color that fits your brand
 
-# Define your inputs here.
 inputs:
   milliseconds:
-    description: Your input description here
+    description: 'Number of milliseconds to wait before continuing execution.'
     required: true
-    default: '1000'
 
-# Define your outputs here.
 outputs:
   time:
+    description: 'The ISO 8601 formatted timestamp when the wait completed.'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
     description: Your output description here
 
 runs:
