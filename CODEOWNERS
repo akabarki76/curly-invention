@@ -5,3 +5,5 @@
 
 # Default owners, unless a later match takes precedence.
 * @actions/actions-oss-maintainers
+/src/* @team-name
+/docs/* @docs-maintainers
