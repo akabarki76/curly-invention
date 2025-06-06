@@ -60,3 +60,8 @@
     "@rollup/rollup-linux-x64-gnu": "*"
   }
 }
+{
+  "scripts": {
+    "bundle": "webpack"
+  }
+}
